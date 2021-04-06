@@ -8,6 +8,10 @@ import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
 
 class App extends Component {
+  componentDidMount() {
+    document.title = `TwitterLike`;
+  }
+
   render() {
     return (
       <BrowserRouter>
